@@ -1,0 +1,170 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
+---
+
+<BaseLayout
+  title="Sobre mi | Gustavo Iago"
+  description="Descubre más acerca de Gustavo Iago y su trayectoria profesional."
+>
+  <div class="stack gap-20">
+    <main class="wrapper about">
+      <Hero
+        title="Sobre mí"
+        tagline="¡Agradezco tu visita! Sigue leyendo para descubrir más sobre mí."
+      >
+        <img
+          width="1553"
+          height="873"
+          src="/assets/at-work.jpg"
+          alt="Gustavo Iago con bata"
+        />
+      </Hero>
+
+      <section>
+        <h2 class="section-title">Historial</h2>
+        <div class="content">
+          <p>
+            Comencé mi carrera en el ámbito de la salud como enfermero,
+            especializándome en dos áreas críticas: cardiología y nefrología. A
+            lo largo de los años, he trabajado con pacientes con condiciones
+            cardíacas complejas, así como con aquellos que enfrentan desafíos
+            renales severos, proporcionando cuidado directo y apoyo emocional
+            tanto a pacientes como a sus familias.
+          </p>
+          <p>
+            He completado múltiples cursos de formación en diversas áreas de la
+            salud que han enriquecido mis habilidades y conocimientos. Estos
+            cursos abarcan desde técnicas avanzadas de atención al paciente
+            hasta el uso de tecnología médica de vanguardia.
+          </p>
+          <p>
+            Motivado por mi interés en la tecnología y su aplicación en el
+            ámbito sanitario, actualmente estoy cursando un FP Superior en
+            Desarrollo de Aplicaciones Web (DAW) en IES Vista Alegre, Madrid.
+            Este programa me ha permitido desarrollar habilidades en
+            programación, diseño web y gestión de bases de datos, con el
+            objetivo de integrar estas herramientas en el mejoramiento de los
+            servicios de salud.
+          </p>
+          <p>
+            Aspiro a fusionar mi experiencia en enfermería con mis nuevas
+            habilidades en desarrollo web para innovar en aplicaciones en todos
+            ambitos.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Estudios</h2>
+        <div class="content">
+          <p>FP Superior en Desarrollo de Aplicaciones Web</p>
+          <p>Especialista en Cardilogía y Nefrología</p>
+          <p>Titulado Universitário en Enfermería</p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Habilidades</h2>
+        <div class="content">
+          <div class="pb-5">
+            <h5>Clínicas</h5>
+            <ul>
+              <li>Gestión de Cuidados Cardíacos y Renales</li>
+              <li>Monitoreo de Signos Vitales y Diagnósticos</li>
+              <li>Administración de Medicamentos</li>
+              <li>Análisis de Datos de Salud</li>
+              <li>Innovación en Tecnología de la Salud</li>
+            </ul>
+          </div>
+          <div class="pt-5">
+            <h5>Técnicas en TI</h5>
+            <ul>
+              <li>Desarrollo Web Front-End y Back-End</li>
+              <li>Gestión de Bases de Datos</li>
+              <li>Implementación de API</li>
+            </ul>
+          </div>
+          <div class="pt-5">
+            <h5>Interpersonales</h5>
+            <ul>
+              <li>Comunicación Efectiva</li>
+              <li>Empatía y Apoyo Emocional</li>
+              <li>Trabajo en Equipo</li>
+            </ul>
+          </div>
+          <div class="pt-5">
+            <h5>Gestión y Liderazgo</h5>
+            <ul>
+              <li>Gestión de Crisis</li>
+              <li>Capacitación y Mentoría</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <ContactCTA />
+  </div>
+</BaseLayout>
+
+<style>
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+  }
+
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+  }
+
+  .content {
+    grid-column: 2 / 4;
+  }
+
+  .content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
+
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
+
+  @media (min-width: 50em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+    }
+
+    .about > :global(:first-child) {
+      grid-column-start: 2;
+    }
+
+    section {
+      display: contents;
+      font-size: var(--text-lg);
+    }
+    p {
+      text-align: justify;
+    }
+  }
+</style>
