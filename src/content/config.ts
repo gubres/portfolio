@@ -3,7 +3,7 @@ import { defineCollection, z } from 'astro:content';
 export const collections = {
 	work: defineCollection({
 		type: 'content',
-		schema: ({image}) => z.object({
+		schema: z.object({
 			title: z.string(),
 			description: z.string(),
 			publishDate: z.coerce.date(),
