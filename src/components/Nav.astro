@@ -67,8 +67,6 @@ const iconLinks: {
                 },
               ]}
               href={href}
-              target="_blank"
-              rel="noopener noreferrer"
             >
               {label}
             </a>
@@ -82,12 +80,7 @@ const iconLinks: {
       <div class="socials">
         {
           iconLinks.map(({ href, icon, label }) => (
-            <a
-              href={href}
-              class="social"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href={href} class="social">
               <span class="sr-only">{label}</span>
               <Icon icon={icon} />
             </a>
@@ -112,7 +105,6 @@ const iconLinks: {
                 },
               ]}
               href={href}
-              target="_blank"
             >
               {label}
             </a>
