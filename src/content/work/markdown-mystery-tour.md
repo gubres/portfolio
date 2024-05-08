@@ -1,7 +1,7 @@
 ---
 title: Gestor de proyectos
 publishDate: 2020-03-02 00:00:00
-img: /assets/stock-1.jpg
+img: /assets/stock-1.webp
 img_alt: webapp de gestion de proyectos
 description: |
   Una web app diseñada para gestionar distintos proyectos
