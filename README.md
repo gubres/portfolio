@@ -1,3 +1,4 @@
+También puedes visitar desde la web: https://gustavoiago.netlify.app/about/
 # Astro Starter Kit: Portfolio
 
 ```sh
