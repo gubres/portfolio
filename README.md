@@ -1,3 +1,5 @@
+También puedes visitar desde la web: https://gustavoiago.netlify.app/about/
+
 # Astro Starter Kit: Portfolio
 
 ```sh
@@ -10,7 +12,7 @@ npm create astro@latest -- --template portfolio
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-![portfolio](https://user-images.githubusercontent.com/357379/210779178-a98f0fb7-6b1a-4068-894c-8e1403e26654.jpg)
+![captura](https://github.com/gubres/portfolio/assets/110687806/01f63d30-583e-4520-bd0c-a00e92f69e04)
 
 ## 🧞 Commands
 
