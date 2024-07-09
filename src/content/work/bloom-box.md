@@ -18,3 +18,5 @@ tags:
 Este juego, desarrollado completamente en lenguaje C, está diseñado para ser tanto entretenido como divertido. Inspirado en el clásico videojuego Pac-Man, presenta características similares donde el usuario puede huir de los fantasmas o frenarlos estratégicamente.
 
 Con una jugabilidad que evoca la nostalgia de los videojuegos clásicos, este proyecto combina simplicidad y diversión en un formato accesible para todos. ¡Experimenta ahora y disfruta de una diversión atemporal!
+
+En mi repositorio de github puedes tener acceso a mi juego basado en PacMan y otras más aplicaciones desarrolladas en C: https://github.com/gubres/proyectos-C
